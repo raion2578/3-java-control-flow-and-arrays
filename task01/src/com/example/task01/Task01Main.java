@@ -8,9 +8,12 @@ public class Task01Main {
         boolean b = canGetDriverLicense(100);
         System.out.println(b);
          */
+        boolean b = canGetDriverLicense(13);
     }
 
     static boolean canGetDriverLicense(int age) {
-        return true;//todo напишите здесь свою корректную реализацию этого метода, вместо существующей
+        if (age < 18)
+            return false;
+        return true;
     }
 }
